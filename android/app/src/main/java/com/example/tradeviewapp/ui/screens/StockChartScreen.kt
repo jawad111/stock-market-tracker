@@ -47,7 +47,7 @@ fun StockChartScreen(stockSymbol: String) {
             if (isLoading) {
                 CircularProgressIndicator()
             } else {
-                StockChart(stockDataList)
+                StockChart(stockDataList.reversed())
             }
         }
     }
@@ -70,7 +70,6 @@ fun StockChart(stockDataList: List<StockDataResult>) {
                 xAxis.valueFormatter = IndexAxisValueFormatter(labels)
                 xAxis.granularity = 1f
                 xAxis.isGranularityEnabled = true
-                data = lineData
                 description.isEnabled = false
                 legend.isEnabled = false
                 layoutParams = ViewGroup.LayoutParams(
