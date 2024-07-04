@@ -14,6 +14,9 @@ navigationRuntimeKtx = "2.7.7"
 navigationCompose = "2.7.7"
 hiltNavigationCompose = "1.0.0"
 hiltAndroid = "2.44"
+kotestVersion = "5.9.1"
+mockitoVersion = "5.12.0"
+kotestAssertionsCoreJvm = "5.9.1"
 
 
 [libraries]
@@ -39,6 +42,13 @@ androidx-navigation-compose = { group = "androidx.navigation", name = "navigatio
 hilt = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 dagger = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
 
+kotest-runner = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotestVersion" }
+kotest-assertions = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotestVersion" }
+kotest-property = { group = "io.kotest", name = "kotest-property", version.ref = "kotestVersion" }
+
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoVersion" }
+mockito-kotlin = { group = "org.mockito", name = "mockito-kotlin", version.ref = "mockitoVersion" }
+kotest-assertions-core-jvm = { group = "io.kotest", name = "kotest-assertions-core-jvm", version.ref = "kotestAssertionsCoreJvm" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
