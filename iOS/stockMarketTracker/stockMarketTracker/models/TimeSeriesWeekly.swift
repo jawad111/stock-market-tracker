@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct StockDataResult: Identifiable, Codable {
+    let id = UUID()
+    let date: String
+    let closePrice: Float
+}
+
+

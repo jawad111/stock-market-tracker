@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8BCCA7D02C382B4200D6B9A0 /* stockMarketTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCA7CF2C382B4200D6B9A0 /* stockMarketTrackerApp.swift */; };
-		8BCCA7D22C382B4200D6B9A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCA7D12C382B4200D6B9A0 /* ContentView.swift */; };
 		8BCCA7D42C382B4400D6B9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCCA7D32C382B4400D6B9A0 /* Assets.xcassets */; };
 		8BCCA7D72C382B4400D6B9A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCCA7D62C382B4400D6B9A0 /* Preview Assets.xcassets */; };
 		8BCCA7E12C382B4500D6B9A0 /* stockMarketTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCA7E02C382B4500D6B9A0 /* stockMarketTrackerTests.swift */; };
@@ -22,6 +21,7 @@
 		8BCCA8072C38305D00D6B9A0 /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCA8062C38305D00D6B9A0 /* StockDetailView.swift */; };
 		8BCCA8092C38306B00D6B9A0 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCA8082C38306B00D6B9A0 /* LineChartView.swift */; };
 		8BCCA80C2C3830B000D6B9A0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCA80B2C3830B000D6B9A0 /* NetworkManager.swift */; };
+		8BCCA80F2C38325900D6B9A0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCA80E2C38325900D6B9A0 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 /* Begin PBXFileReference section */
 		8BCCA7CC2C382B4200D6B9A0 /* stockMarketTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stockMarketTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCCA7CF2C382B4200D6B9A0 /* stockMarketTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stockMarketTrackerApp.swift; sourceTree = "<group>"; };
-		8BCCA7D12C382B4200D6B9A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8BCCA7D32C382B4400D6B9A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BCCA7D62C382B4400D6B9A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8BCCA7DC2C382B4500D6B9A0 /* stockMarketTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stockMarketTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +59,7 @@
 		8BCCA8062C38305D00D6B9A0 /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 		8BCCA8082C38306B00D6B9A0 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		8BCCA80B2C3830B000D6B9A0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8BCCA80E2C38325900D6B9A0 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +110,12 @@
 		8BCCA7CE2C382B4200D6B9A0 /* stockMarketTracker */ = {
 			isa = PBXGroup;
 			children = (
+				8BCCA80D2C38323C00D6B9A0 /* Extensions */,
 				8BCCA80A2C38308E00D6B9A0 /* Networking */,
 				8BCCA8032C38303500D6B9A0 /* Views */,
 				8BCCA7FE2C382FDA00D6B9A0 /* ViewModels */,
 				8BCCA7F92C382F8100D6B9A0 /* models */,
 				8BCCA7CF2C382B4200D6B9A0 /* stockMarketTrackerApp.swift */,
-				8BCCA7D12C382B4200D6B9A0 /* ContentView.swift */,
 				8BCCA7D32C382B4400D6B9A0 /* Assets.xcassets */,
 				8BCCA7D52C382B4400D6B9A0 /* Preview Content */,
 			);
@@ -183,6 +183,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		8BCCA80D2C38323C00D6B9A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8BCCA80E2C38325900D6B9A0 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,6 +207,8 @@
 			dependencies = (
 			);
 			name = stockMarketTracker;
+			packageProductDependencies = (
+			);
 			productName = stockMarketTracker;
 			productReference = 8BCCA7CC2C382B4200D6B9A0 /* stockMarketTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +281,9 @@
 				Base,
 			);
 			mainGroup = 8BCCA7C32C382B4200D6B9A0;
+			packageReferences = (
+				8B7001672C3AAE5B008FECD7 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 8BCCA7CD2C382B4200D6B9A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,13 +327,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BCCA8022C38301C00D6B9A0 /* StockDetailViewModel.swift in Sources */,
+				8BCCA80F2C38325900D6B9A0 /* String+Extensions.swift in Sources */,
 				8BCCA7FD2C382FD100D6B9A0 /* TimeSeriesWeekly.swift in Sources */,
 				8BCCA80C2C3830B000D6B9A0 /* NetworkManager.swift in Sources */,
 				8BCCA8072C38305D00D6B9A0 /* StockDetailView.swift in Sources */,
 				8BCCA8002C38300800D6B9A0 /* SearchViewModel.swift in Sources */,
 				8BCCA8052C38304C00D6B9A0 /* SearchView.swift in Sources */,
 				8BCCA8092C38306B00D6B9A0 /* LineChartView.swift in Sources */,
-				8BCCA7D22C382B4200D6B9A0 /* ContentView.swift in Sources */,
 				8BCCA7D02C382B4200D6B9A0 /* stockMarketTrackerApp.swift in Sources */,
 				8BCCA7FB2C382FBC00D6B9A0 /* SymbolSearchResult.swift in Sources */,
 			);
@@ -652,6 +665,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B7001672C3AAE5B008FECD7 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8BCCA7C42C382B4200D6B9A0 /* Project object */;
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct stockMarketTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchView()
         }
     }
-}
+}   
